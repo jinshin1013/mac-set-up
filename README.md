@@ -101,3 +101,26 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jbr/Contents/Home
 ```
+
+### 5. Set up VSCode / Cursor AI
+
+Install the following extensions: `Eslint`, `Expo Tools`, `GitLens`, `Prettier`, `Tokyo Night`, `vscode-icons`, `Svelte`.
+
+Then install `Fira Code` fonts (get the font from their github).
+
+Add the following settings:
+
+```json
+{
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "none",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "editor.tabSize": 2,
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
+  "workbench.colorTheme": "Tokyo Night"
+}
+```
